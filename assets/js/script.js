@@ -26,7 +26,7 @@ click.addEventListener("click", function () {
       temp.innerHTML = `${res.main.temp}°C`;
       icon.src = `https://openweathermap.org/img/wn/${res.weather[0].icon}@2x.png`;
       description.innerHTML = res.weather[0].description;  
-      loc.innerHTML = `<i class="bi bi-geo-alt-fill fs-6"></i> ${res.name}`;
+      loc.innerHTML = `<i class="bi bi-geo-alt-fill fs-6 d-flex align-items-center"></i> ${res.name}`;
       humidity.innerHTML = `${res.main.humidity}%`;
       wind.innerHTML = `${res.wind.speed}km/h`;
     });

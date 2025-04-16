@@ -50,6 +50,9 @@ input:focus{
     display: block;
     margin-bottom: 5px;
   }
+  .text{
+    color: rgb(192, 187, 187);
+  }
   
 
 
