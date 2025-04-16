@@ -10,37 +10,48 @@
 </head>
 <body>
     <div class="container">
-        <div>
-            <h2>Weather API</h2>
-        </div>
         <div class="d-flex align-items-center justify-content-center vh-100">
 
           <div class="weather-box rounded p-4">
             <div class="search-bar d-flex align-items-center justify-content-between mb-3">
-              <input type="text" class="form-control me-2" id="ctName" placeholder="Enter City Name">
-              <button class="btn btn-outline-dark" id="btn"><i class="bi bi-search"></i></button>
+              <input type="text" class="form-control me-2 " id="ctName" placeholder="Enter City Name">
+              <button class="btn btn-dark rounded" id="btn">
+                <i class="bi bi-search"></i>
+              </button>
             </div>
 
             <div class="text-center weather-info">
-              <img src="./assets/image/search-weather.png" class="weather-icon pt-3" id="icon"/>
-              <h1 id="temp" class="fw-bold display-6">28°C</h1>
-              <p id="description" class=""></p>
+              <div class="pt-3">
+                <img src="./assets/image/search-weather.png" class="weather-icon" id="icon"/>
+              </div>
+              <div class="">
+                <h1 id="temp" class="fw-bold my-3"></h1>
+                <p id="location"></p>
+                <p id="description" class=""></p>
+              </div>
+
               <div class="d-flex justify-content-around mt-4">
-                <div class="text-center">
-                  <i class="bi bi-droplet-half"></i>
-                  <p id="humidity">51%<br><small>Humidity</small></p>
+                <div class="d-flex align-items-center">
+                  <i class="bi bi-droplet-half me-2"></i>
+                  <div class="text-start">
+                    <p id="humidity" class="fs-6"></p>
+                    <span>humidity</span>
+                  </div>
                 </div>
-                <div class="text-center">
-                  <i class="bi bi-wind"></i>
-                  <p id="wind">4.63Km/H<br><small>Wind Speed</small></p>
+                <div class="d-flex align-items-center">
+                  <i class="bi bi-wind me-2"></i>
+                  <div class="text-start">
+                    <p id="wind" class="fs-6"></p>
+                    <span>Wind Speed</span>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      
 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="./assets/js/script.js"></script>
 </body>
 </html> 
