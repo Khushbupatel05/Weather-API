@@ -4,24 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/bootstrap.css">
 </head>
 <body>
     <div class="container">
-        <div class="box rounded w-25 border my-3">
-            <div class="py-5 p-4">
-                <label for="ctName" class="fw-bold ">City Name : </label>
-                <input type="text" name="name" id="ctName" class="form-control " >
-            </div>
-            <div class="text-center">
-                <button class="btn btn-primary " id="btn">Click Me</button>
-            </div>
-            <div>
-                <h3 id="ans" class="pt-3"></h3>
-            </div>
+        <div>
+            <h2>Weather API</h2>
         </div>
-    </div>  
+        <div class="d-flex align-items-center justify-content-center vh-100">
+
+          <div class="weather-box rounded p-4">
+            <div class="search-bar d-flex align-items-center justify-content-between mb-3">
+              <input type="text" class="form-control me-2" id="ctName" placeholder="Enter City Name">
+              <button class="btn btn-outline-dark" id="btn"><i class="bi bi-search"></i></button>
+            </div>
+
+            <div class="text-center weather-info">
+              <img src="./assets/image/search-weather.png" class="weather-icon pt-3" id="icon"/>
+              <h1 id="temp" class="fw-bold display-6">28°C</h1>
+              <p id="description" class=""></p>
+              <div class="d-flex justify-content-around mt-4">
+                <div class="text-center">
+                  <i class="bi bi-droplet-half"></i>
+                  <p id="humidity">51%<br><small>Humidity</small></p>
+                </div>
+                <div class="text-center">
+                  <i class="bi bi-wind"></i>
+                  <p id="wind">4.63Km/H<br><small>Wind Speed</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
 
     <script src="./assets/js/script.js"></script>
 </body>
