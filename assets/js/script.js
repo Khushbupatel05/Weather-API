@@ -8,7 +8,9 @@ let wind = document.getElementById("wind");
 
 click.addEventListener("click", function () {
   let cityName = document.getElementById("ctName").value;
-  let URL = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&units=metric&appid=c7a2b33e4c6e7fff86368c2d79d8ce6f`;
+  let cityKey = `c7a2b33e4c6e7fff86368c2d79d8ce6f`;
+
+  let URL = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&units=metric&appid=${cityKey}`;
 
   fetch(URL)
     .then((res) => res.json())
